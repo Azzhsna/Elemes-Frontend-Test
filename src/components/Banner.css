@@ -593,7 +593,7 @@
     font-size: 0.6rem;
     max-height: 7.5rem;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
