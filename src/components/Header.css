@@ -176,3 +176,151 @@
   background-color: #333;
   cursor: pointer;
 }
+
+/* Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+  }
+
+  /* Nav links */
+  .nav-links {
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  /* Watchlist */
+  .watchlist-wrapper {
+    margin-top: 0;
+  }
+  .watchlist-count {
+    font-size: 0.65rem;
+    padding: 1px 5px;
+    top: -6px;
+    right: -15px;
+  }
+  .watchlist-dropdown {
+    width: 160px;
+    top: 110%;
+    padding: 0.4rem;
+    max-height: 220px;
+  }
+  .watchlist-item {
+    gap: 0.3rem;
+    padding: 0.2rem 0;
+  }
+  .watchlist-item img {
+    width: 30px;
+    height: 45px;
+  }
+  .watchlist-item span {
+    font-size: 0.7rem;
+  }
+
+  /* Header icons */
+  .header-icons .icon {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  /* Search */
+  .search-wrapper input {
+    width: 120px;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .search-wrapper input:focus {
+    width: 180px;
+  }
+  .search-results {
+    width: 180px;
+    max-height: 250px;
+  }
+  .search-result-item img {
+    width: 30px;
+    height: 45px;
+  }
+  .search-result-item span {
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Nav links */
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  /* Watchlist */
+  .watchlist-wrapper {
+    margin-top: 0.3rem;
+  }
+  .watchlist-count {
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    top: -5px;
+    right: -12px;
+  }
+  .watchlist-dropdown {
+    width: 140px;
+    top: 105%;
+    padding: 0.3rem;
+    max-height: 180px;
+  }
+  .watchlist-item {
+    gap: 0.2rem;
+    padding: 0.15rem 0;
+  }
+  .watchlist-item img {
+    width: 25px;
+    height: 40px;
+  }
+  .watchlist-item span {
+    font-size: 0.33rem;
+  }
+
+  /* Header icons */
+  .header-icons {
+    margin-top: 0.3rem;
+  }
+  .header-icons .icon {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+  }
+
+  /* Search */
+  .search-wrapper input {
+    width: 90px;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.4rem;
+  }
+  .search-wrapper input:focus {
+    width: 140px;
+  }
+  .search-results {
+    width: 140px;
+    max-height: 200px;
+  }
+  .search-result-item img {
+    width: 25px;
+    height: 40px;
+  }
+  .search-result-item span {
+    font-size: 0.7rem;
+  }
+}

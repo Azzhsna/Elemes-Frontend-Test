@@ -116,58 +116,6 @@
   transition: opacity 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .banner-content {
-    max-width: 90%;
-    min-height: 50%;
-  }
-
-  .banner-title {
-    font-size: 2rem;
-  }
-
-  .banner-rating {
-    font-size: 1.1rem;
-  }
-
-  .banner-description {
-    font-size: 0.9rem;
-    max-height: 4rem;
-  }
-
-  .banner-buttons {
-    flex-direction: column;
-    bottom: 2rem;
-  }
-
-  .bannerplay-btn,
-  .bannerwatchlist-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .banner-content {
-    min-height: 45%;
-    margin-left: 5px;
-  }
-
-  .banner-title {
-    font-size: 1.5rem;
-  }
-
-  .banner-rating {
-    font-size: 1rem;
-  }
-
-  .banner-description {
-    font-size: 0.85rem;
-    max-height: 3.5rem;
-  }
-}
-
 /* NOW PLAYING MOVIES */
 .nowplaying-movie-list {
   display: flex;
@@ -585,4 +533,118 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Responsive for Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+  /* Banner */
+  .banner-content {
+    max-width: 90%;
+    min-height: 50%;
+    margin-left: 10px;
+  }
+  .banner-title {
+    font-size: 1rem;
+  }
+  .banner-rating {
+    font-size: 1.1rem;
+  }
+  .banner-description {
+    font-size: 0.9rem;
+    max-height: 4rem;
+  }
+  .banner-buttons {
+    flex-direction: column;
+    bottom: 2rem;
+  }
+  .bannerplay-btn,
+  .bannerwatchlist-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .movie-card img,
+  .nowplaying-movie-card img,
+  .upcoming-movie-card img,
+  .tv-card img {
+    height: 300px;
+  }
+  .movie-card,
+  .nowplaying-movie-card,
+  .upcoming-movie-card,
+  .tv-card {
+    min-width: 200px;
+  }
+}
+
+/* Responsive for Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .banner-content {
+    min-height: 45%;
+    margin-left: 5px;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .banner-rating {
+    font-size: 1rem;
+  }
+  .banner-description {
+    font-size: 0.6rem;
+    max-height: 7.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .banner-buttons {
+    bottom: 1.5rem;
+  }
+  .bannerplay-btn,
+  .bannerwatchlist-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .movie-card img,
+  .nowplaying-movie-card img,
+  .upcoming-movie-card img,
+  .tv-card img {
+    height: 250px;
+  }
+  .movie-card,
+  .nowplaying-movie-card,
+  .upcoming-movie-card,
+  .tv-card {
+    min-width: 160px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-left-width: 3px;
+  }
+
+  .nowplaying-movie-list,
+  .upcoming-movie-list,
+  .movie-list.horizontal,
+  .tv-list.horizontal {
+    padding: 2rem 1rem;
+  }
+
+  .movie-overlay h3,
+  .tv-overlay h3 {
+    font-size: 1rem;
+  }
+  .movie-overlay p,
+  .tv-overlay p {
+    font-size: 0.8rem;
+  }
+
+  .overlay-buttons .play-btn,
+  .overlay-buttons .watchlist-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
 }

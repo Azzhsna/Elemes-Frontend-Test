@@ -88,3 +88,73 @@
   transform: scale(1.15);
   z-index: 5;
 }
+
+/* Tablet (max-width: 900px) */
+@media (max-width: 900px) {
+  .home-section,
+  .home-section-people {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .home-section {
+    padding-top: 25px;
+    margin-bottom: 3rem;
+  }
+  .home-section-people {
+    padding-bottom: 40px;
+  }
+  .home-section h2,
+  .home-section-people h2 {
+    font-size: 1.6rem;
+  }
+  .home-section .category-label,
+  .home-section-people .category-label {
+    font-size: 0.85rem;
+  }
+  .home-section .movie-list.horizontal > *,
+  .home-section .tv-list.horizontal > *,
+  .home-section .people-list.horizontal > * {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  .home-section .movie-list.horizontal > *:hover,
+  .home-section .tv-list.horizontal > *:hover,
+  .home-section .people-list.horizontal > *:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .home-section,
+  .home-section-people {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .home-section {
+    padding-top: 20px;
+    margin-bottom: 2.5rem;
+  }
+  .home-section-people {
+    padding-bottom: 30px;
+  }
+  .home-section h2,
+  .home-section-people h2 {
+    font-size: 1.3rem;
+  }
+  .home-section .category-label,
+  .home-section-people .category-label {
+    font-size: 0.8rem;
+  }
+  .home-section .movie-list.horizontal > *,
+  .home-section .tv-list.horizontal > *,
+  .home-section .people-list.horizontal > * {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .home-section .movie-list.horizontal > *:hover,
+  .home-section .tv-list.horizontal > *:hover,
+  .home-section .people-list.horizontal > *:hover {
+    transform: scale(1.05);
+  }
+}
