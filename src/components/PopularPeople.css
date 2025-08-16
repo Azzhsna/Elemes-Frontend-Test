@@ -1,0 +1,174 @@
+.popular-people {
+  position: relative;
+  top: 0;
+  min-height: 10vh;
+  color: #fff;
+}
+.popular-people::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.popular-people__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.popular-people__loading {
+  padding: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.popular-people__scroll {
+  display: flex;
+  gap: 35px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.popular-people__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.popular-people__item {
+  flex: 0 0 auto;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  padding: 15px;
+}
+
+.popular-people__item:hover {
+  transform: translateY(-4px);
+}
+
+.popular-people__avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 8px;
+  display: block;
+  background: #ffffff;
+  transition: transform 0.3s ease;
+}
+.popular-people__item:hover .popular-people__avatar {
+  transform: scale(1.1);
+}
+
+.popular-people__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popular-people__dept {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.popular-people__detail {
+  padding: 25px;
+  margin-right: 8vh;
+  margin-left: 5vh;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  background-color: #1f1f1f;
+  border-radius: 14px;
+  color: #fff;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popular-people__close {
+  position: absolute;
+  right: 40px;
+  top: 12px;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  transition: background 0.2s;
+}
+.popular-people__close:hover {
+  background: #666;
+}
+
+.popular-people__detail h2 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.popular-people__detail-dept {
+  margin: 0 0 12px;
+  color: #ccc;
+}
+.popular-people__detail h3 {
+  margin: 0 40px 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.popular-people__works {
+  margin-left: 5vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.popular-people__work-card {
+  background-color: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  color: #fff;
+}
+.popular-people__work-card:hover {
+  transform: translateY(-4px);
+}
+
+.popular-people__work-poster {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  display: block;
+}
+
+.popular-people__work-info {
+  padding: 10px;
+}
+.popular-people__work-info h4 {
+  font-size: 0.95rem;
+  margin: 0 0 10px;
+  color: #fff;
+}
+.popular-people__work-type {
+  color: #ddd;
+  font-size: 0.8rem;
+  margin: 0;
+}
